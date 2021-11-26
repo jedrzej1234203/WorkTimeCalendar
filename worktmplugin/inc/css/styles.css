@@ -1,0 +1,264 @@
+/*
+multiform buttons etc
+*/
+body {
+    background-color: #f1f1f1;
+}
+
+#nu_mutiform {
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    border-left: 10px solid #0069d9;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+
+#ni_mutiform {
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    border-left: 10px solid #e65054;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+
+#multiForm {
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+
+}
+h1 {
+    text-align: center;
+}
+.csstab{
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+}
+.tab {
+    display: none;
+}
+button {
+    border-radius: 5px;
+    background-color: #0069d9;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+.worktmp_deletebutton {
+    border-radius: 5px;
+    background-color: #72aee6;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.worktmp_editbutton{
+    border-radius: 5px;
+    background-color: #72aee6;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.worktmp_editbutton:hover{
+    opacity: 0.8;
+    background-color: #0069d9 ;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+#prevBtn {
+    background-color: #72aee6;
+}
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #72aee6;
+    border: none;
+    border-radius: 25%;
+    display: inline-block;
+    opacity: 0.5;
+}
+.step.active {
+    opacity: 1;
+}
+.step.finish {
+    background-color: #72aee6;
+}
+
+.s_t_wrapper{
+    box-sizing: border-box;
+    display: inline-flex;
+    background: #fff;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+
+.s_t_wrapper .option{
+    background: #72aee6;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    color: #fff;
+}
+
+input[type="radio"]{
+    display: none;
+
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+    background: #0069d9;
+}
+
+#reloadtable{
+    display: block;
+    width: 100%;
+
+}
+#editabsence{
+    display: none;
+    width: 100%;
+}
+
+/**
+table
+ */
+.workat {
+    width: 100%;
+}
+.workat th {
+    text-align: left;
+    border-bottom: #0c0c0c 2px;
+    padding-right: 10px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.workat td {
+    padding: 5px 8px;
+    font-size: 14px;
+}
+
+.workat tr:nth-child(2n) {
+    background-color: #f1f1f1;
+}
+
+
+/**
+modal box styling
+ */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.modal-header {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: #72aee6;
+    color: white;
+}
+.modal-footer{
+    text-align: center;
+    padding: 2px 16px;
+    background-color: #72aee6;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+/**
+*stats tabs
+ */
+
+.stat-menu li {
+    position:relative;
+    background-color: #fff;
+    color:#bcbcbc;
+    display: inline-block;
+    padding: 20px 40px;
+    opacity: 0.8;
+    cursor:pointer;
+    z-index:0;
+}
+
+.stat-menu li:hover {
+    color:#464646;
+}
+
+.stat-menu li.active {
+    color:#464646;
+    opacity: 1;
+}
+
+
+.stat-page>div {
+    background-color: #fff;
+    box-sizing:border-box;
+    width: 100%;
+    padding: 50px;
+    min-height:200px;
+}
+
+.line {
+    position:absolute;
+    width: 0;
+    height: 7px;
+    background-color: #72aee6;
+    top: 0;
+    left: 0;
+}
+
+
